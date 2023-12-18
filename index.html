@@ -1,13 +1,13 @@
 <div style="background-position: center center; background-image: url('img/titlepic.jpg'); background-size: cover; width: 100%; color: white; text-align: center; padding: 100px 0;">
-  <h1>ESP: Exploiting Symmetry Prior for Multi-Agent<br>Reinforcement Learning</h1>
-  <h3 style="font-style: italic;">Xin Yu, Rongye Shi*, Pu Feng, Yongkai Tian, Jie Luo, Wenjun Wu</h3>
-  <p>European Conference on Artificial Intelligence (ECAI 2023)</p>
-  <p><span><a href="./pdf/esp.pdf" style="color: white; text-decoration: underline;">[Paper]</a></span>&nbsp;&nbsp;&nbsp;<span><a href="./pdf/esp.pdf" style="color: white; text-decoration: underline;">[Supplementary]</a></span></p>
+  <h1>Leveraging Partial Symmetry for Multi-Agent Reinforcement Learning</h1>
+  <h3 style="font-style: italic;">Xin Yu, Rongye Shi*, Pu Feng, Yongkai Tian, Simin Li, Shuhao Liao, Wenjun Wu</h3>
+  <p>The 38th Annual AAAI Conference on Artificial Intelligence (AAAI 2024)</p>
+  <p><span><a href="./pdf/PSE.pdf" style="color: white; text-decoration: underline;">[Paper]</a></span>&nbsp;&nbsp;&nbsp;<span><a href="./pdf/SUP.pdf" style="color: white; text-decoration: underline;">[Supplementary]</a></span></p>
 </div>
 
 <div style="width: 70%; margin: auto;">
   <h2 style="text-align: left;">Abstract</h2>
-  <p style="font-style: italic; font-size: 1.2em; line-height: 1.3;">Multi-agent reinforcement learning (MARL) has achieved promising results in recent years. However, most existing reinforcement learning methods require a large amount of data for model training. In addition, data-efficient reinforcement learning requires the construction of strong inductive biases, which are ignored in the current MARL approaches. Inspired by the symmetry phenomenon in multi-agent systems, this paper proposes a framework for exploiting prior knowledge by integrating data augmentation and a well-designed consistency loss into the existing MARL methods. In addition, the proposed framework is model-agnostic and can be applied to most of the current MARL algorithms. Experimental tests on multiple challenging tasks demonstrate the effectiveness of the proposed framework. Moreover, the proposed framework is applied to a physical multi-robot testbed to show its superiority.</p>
+  <p style="font-style: italic; font-size: 1.2em; line-height: 1.3;">Incorporating symmetry as an inductive bias into multi-agent reinforcement learning (MARL) has led to improvements in generalization, data efficiency, and physical consistency. While prior research has succeeded in using perfect symmetry prior, the realm of partial symmetry in the multi-agent domain remains unexplored. To fill in this gap, we introduce the partially symmetric Markov game, a new subclass of the Markov game. We then theoretically show that the performance error introduced by utilizing symmetry in MARL is bounded, implying that the symmetry prior can still be useful in MARL even in partial symmetry situations. Motivated by this insight, we propose the Partial Symmetry Exploitation (PSE) framework that is able to adaptively incorporate symmetry prior in MARL under different symmetry-breaking conditions. Specifically, by adaptively adjusting the exploitation of symmetry, our framework is able to achieve superior sample efficiency and overall performance of MARL algorithms. Extensive experiments are conducted to demonstrate the superior performance of the proposed framework over baselines. Finally, we implement the proposed framework in real-world multi-robot testbed to show its superiority.</p>
 
   <h2 style="text-align: left;">Videos</h2>
   <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 5px; justify-items: center;">
