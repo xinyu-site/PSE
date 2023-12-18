@@ -10,7 +10,7 @@
   <p style="font-style: italic; font-size: 1.2em; line-height: 1.3;">Incorporating symmetry as an inductive bias into multi-agent reinforcement learning (MARL) has led to improvements in generalization, data efficiency, and physical consistency. While prior research has succeeded in using perfect symmetry prior, the realm of partial symmetry in the multi-agent domain remains unexplored. To fill in this gap, we introduce the partially symmetric Markov game, a new subclass of the Markov game. We then theoretically show that the performance error introduced by utilizing symmetry in MARL is bounded, implying that the symmetry prior can still be useful in MARL even in partial symmetry situations. Motivated by this insight, we propose the Partial Symmetry Exploitation (PSE) framework that is able to adaptively incorporate symmetry prior in MARL under different symmetry-breaking conditions. Specifically, by adaptively adjusting the exploitation of symmetry, our framework is able to achieve superior sample efficiency and overall performance of MARL algorithms. Extensive experiments are conducted to demonstrate the superior performance of the proposed framework over baselines. Finally, we implement the proposed framework in real-world multi-robot testbed to show its superiority.</p>
 
   <h2 style="text-align: left;">Videos</h2>
-  <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 5px; justify-items: center;">
+  <!-- <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 5px; justify-items: center;">
     <div>
       <iframe src="//player.bilibili.com/player.html?bvid=BV1ec411F7rx&page=1" style="width: 600px; height: 380px;" frameborder="0" allowfullscreen="true"></iframe>
       <p style="width: 550px; text-align: center;">MAPPO </p>
@@ -29,7 +29,39 @@
       <iframe src="//player.bilibili.com/player.html?bvid=BV1Dx4y1Q7VQ&page=1" style="width: 600px; height: 380px;" frameborder="0" allowfullscreen="true"></iframe>
       <p style="width: 550px; text-align: center;">MAPPO-ESP</p>
     </div>
-  </div>
+  </div> -->
+  <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 5px; justify-items: center;">
+    <div>
+      <video width="600" height="380" controls>
+        <source src="/videos/MAPPO_PSE_REAL_WORLD.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p style="width: 550px; text-align: center;">MAPPO_PSE </p>
+    </div>
+    <div>
+      <video width="600" height="380" controls>
+        <source src="/videos/MAPPO_PSE_SIMULATION.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p style="width: 550px; text-align: center;">MAPPO-PSE</p>
+    </div>
+
+    <div>
+      <video width="600" height="380" controls>
+        <source src="/videos/MAPPO_REAL_WORLD.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p style="width: 550px; text-align: center;">MAPPO</p>
+    </div>
+    
+    <div>
+      <video width="600" height="380" controls>
+        <source src="/videos/MAPPO_SIMULATION.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p style="width: 550px; text-align: center;">MAPPO</p>
+    </div>
+</div>
 
 
   <h2 style="text-align: left;">Code</h2>
